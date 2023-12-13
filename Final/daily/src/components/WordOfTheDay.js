@@ -116,7 +116,7 @@ const WordOfTheDay = () => {
   const example = firstMeaning.example;
 
   return (
-    <div className="text-center p-8">
+    <div className="text-center p-8 always">
       <h1 className="text-3xl font-bold mb-2">{wordData.word}</h1>
       <p className="text-lg">{phonetics[0]?.text || " "}</p>
       <p className="text-md">Origin: {origin || "🤷🏾❓"}</p>

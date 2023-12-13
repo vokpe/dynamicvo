@@ -72,7 +72,7 @@ const HistoryFavorites = () => {
         <h2 className="text-2xl font-bold mb-4">Favorites</h2>
         <ul>
           {favorites.map((favorite, index) => (
-            <li key={index} className="list-disc ml-6">{favorite}</li>
+            <li key={index} className="">{favorite}</li>
           ))}
         </ul>
       </div>
@@ -80,7 +80,7 @@ const HistoryFavorites = () => {
         <h2 className="text-2xl font-bold mb-4">History</h2>
         <ul>
           {history.map((item, index) => (
-            <li key={index} className="list-disc ml-6">{item}</li>
+            <li key={index} className="">{item}</li>
           ))}
         </ul>
       </div>

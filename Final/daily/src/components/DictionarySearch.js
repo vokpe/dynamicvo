@@ -121,7 +121,7 @@ const DictionarySearch = () => {
   };
 
   return (
-    <div className="search-container my-10">
+    <div className="search-container my-10 floaty-text">
       <input 
         type="text"
         value={searchTerm}
