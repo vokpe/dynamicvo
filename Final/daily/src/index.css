@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-gray-900;
+}
+
+h1 {
+  @apply text-4xl font-semibold;
+}
+
+p {
+  @apply mt-2 text-lg;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  @apply mx-auto max-w-6xl px-4 py-8;
+}
+
+.nav-item {
+  @apply text-white text-lg no-underline hover:text-gray-300;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  @apply -translate-y-1;
+}
+
+
+.button {
+  @apply bg-black text-white font-bold py-2 px-4 rounded hover:bg-gray-700 transition-colors;
+}
+
+
+.input {
+  @apply shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-300;
+}
+
+.definition,
+.history-list {
+  @apply mt-4 bg-white shadow-md rounded px-6 pt-4 pb-6 mb-4;
+}
+
