@@ -318,15 +318,19 @@ const breakoutSketch = (highScore, setHighScore) => (s) => {
                 bspeedX *= rightMap;
                 //bounce.play();
                 bspeedY *= -1.1;
+                
             }
 
         else if (ballX >= (paddleX + paddleWidth)/2) {
                 bspeedX *= leftMap;
                 //bounce.play();
                 bspeedY *= -1.1;
+
             }
         
         }
+        s.constrain(bspeedX, -1,1);
+        s.constrain(bspeedY, -1,1);
 
         let shighScore = window.localStorage.getItem('highScore');
 
